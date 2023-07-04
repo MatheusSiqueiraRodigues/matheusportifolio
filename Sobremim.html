@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Matheus</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: royalblue;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content:center;/*menu centralizado*/
+            gap: 20px;
+        }
+
+        .imagem_matheus {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: royalblue;
+            color: white;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            color: royalblue;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid royalblue 1px;
+        }
+
+        li{
+            float: left;
+        }
+
+        a:hover {
+            background-color: royalblue;
+            color: white;
+        }
+
+        /* media query apenas para mobile */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_matheus {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        } 
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Portfólio de Matheus</h1>
+        <br>
+        
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="Sobremim.html">Sobre Mim</a></li>
+            <li><a href="Formacaoeducacional.html">Formação Educacional</a></li>
+            <li><a href="Portfolio.html">Portfólio</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_matheus">
+            <img src="IMGperfil.jpg">
+            <div class="infos">
+                <p><strong>Ocupação:</strong> Empresário</p>
+                <p>
+                    <strong> Data do Nascimento:</strong>
+                    22/06/1992
+                </p>
+                
+            </div>
+            
+        </aside>
+        <section class="principal">
+            <h1> 
+                Matheus Siqueira - Sobre Mim
+            </h1>
+            <p> Me chamo Matheus Siqueira, tenho 31 anos de idade e sou de Natal-RN. Sou casado, ainda sem filhos, empresário, e estou na minha segunda graduação. Acredito que conhecimento e sempre querer aprender novas áreas é fundamental para formação de qualquer ser humano. Sou formado em administração e pretendo
+                ingressar na área de Ti por meio dessa nova graduação. Apesar da idade um pouco mais avançada na área, estou compensando com esforço dobrado e vontade de aprender cada vez mais, pois vejo um mercado necessitado de pessoas capacitadas na área.
+            </p>
+
+                <p> Sou também, apaixonado por esportes e fazer atividade física. A principal é o futebol, além de ser fanático pelo meu time, o palmeiras, sempre que tenho um tempo disponível, organizo um futebol com os amigos para desopilar e me divertir.
+                Procuro sempre me manter ativo semanalmente também na academia. Me considero caseiro, nos finais de semana procuro descansar, ir para praia, ir também para igreja. Acredito que devemos estar bem mentalmente, fisicamente e espiritualmente para termos uma boa qualidade de vida em meio a uma vida corrida e que cada vez passa mais rápido. 
+            </p>
+
+                <p> Gosto muito de viajar! Já visitei 7 países da europa e acho incrível conhecer outras culturas, línguas, e países. Sem dúvidas, é uma das coisas que mais gosto de fazer!
+                </p>
+
+            
+        </section>
+    </div>
+    <footer class="container">
+        <h1> Desenvolvido para graduação </h1>
+    </footer>
+    </div>
+    
+</body>
+</html>
